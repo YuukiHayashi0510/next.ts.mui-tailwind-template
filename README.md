@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Lefthook Installation
+
+### Run it only once in a global environment
+
+```bash
+brew install lefthook
+```
+
+```bash
+yarn global add @commitlint/{config-conventional,cli}
+```
+
+### Activate Lefthook
+
+```bash
+lefthook install
+```
+
 ## Getting Started
 
 First, run the development server:
