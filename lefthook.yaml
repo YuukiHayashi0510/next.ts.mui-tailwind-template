@@ -1,0 +1,23 @@
+pre-commit:
+  scripts:
+    'branch_checker':
+      runner: bash
+  commands:
+    format:
+      tags: prettier
+      glob: '*.{ts,tsx}'
+      run: yarn fmt:check
+    lint:
+      tags: eslint
+      glob: '*.{ts,tsx}'
+      run: yarn eslint {staged_files}
+
+commit-msg:
+  commands:
+    lint-commit-msg:
+      run: yarn commitlint --edit
+
+pre-push:
+  scripts:
+    'branch_checker':
+      runner: bash
