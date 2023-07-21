@@ -1,23 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Lefthook Installation
-
-### Run it only once in a global environment
-
-```bash
-brew install lefthook
-```
-
-```bash
-yarn global add @commitlint/{config-conventional,cli}
-```
-
-### Activate Lefthook
-
-```bash
-lefthook install
-```
-
 ## Getting Started
 
 First, run the development server:
@@ -35,3 +17,8 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## PageComponent
+
+Pages内にてページとして認識させるには、`*.page.tsx`にする必要あり
+[参考](https://zenn.dev/uttk/articles/d6be1c224494cb)
